@@ -5,7 +5,7 @@ on:
 
 jobs:
   triage:
-    if: github.event.issue.labels[0] != null
+    if: github.event.issue.labels[0] == null
     runs-on: ubuntu-latest
     steps:
     - uses: github/issue-labeler@v2.5
